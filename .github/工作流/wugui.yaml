@@ -41,6 +41,4 @@ jobs:
       run: |
         if [ -f "ctx_cookies.yaml" ];then cp ctx_cookies.yaml epic/src/database/cookies/; fi
         cd epic/src/ && ${{ env.COMMAND }}
-env:
 
-PUSHER_SERVERCHAN: ${{ secrets.PUSHER_SERVERCHAN }}
